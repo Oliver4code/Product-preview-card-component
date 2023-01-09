@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+
+main{
+    min-width: 100vw;
+    min-height: calc(100vh - 14px);
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container{
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+
+
+/* SECTION LEFT */
+.section-left{
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+    background-image: url(images/image-product-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* SECTION RIGHT */
+.section-right{
+    width: 50%;
+    height: 100%;
+    padding: 25px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+
+
+/* PRODUCT */
+.product{
+    margin-bottom: 20px;
+}
+
+.product h1{
+    font-family: 'Montserrat', sans-serif, Arial;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+}
+
+
+
+/* TITLE */
+.title{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 35px;
+}
+
+
+
+
+/* PARAGRAPH */
+.section-right p{
+    font-family: 'Montserrat', sans-serif, Arial;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 27px;
+    color: hsl(228, 12%, 48%);
+}
+
+
+
+/* PRICE */
+.price{
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.price h2{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 35px;
+    margin-right: 15px;
+}
+
+.price h3{
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+
+
+/* BUTTON */
+button{
+    font-family: 'Montserrat', sans-serif, Arial;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+button img{
+    padding: 10px;
+}
+
+button:hover{
+    background-color: hsl(158, 36%, 24%);
+}
+
+
+
+
+/* FOOTER */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width:610px) {
+    .container{
+        padding: 10px;
+    }
+
+    .price{
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+}
+
+
+
+@media (max-width: 520px){
+    .container{
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .section-left{
+        width: 300px;
+        height: 40%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-image: url(images/image-product-mobile.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .section-right{
+        width: 300px;
+        height: 60%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 15px;
+    }
+
+
+    .product{
+        margin-bottom: 10px;
+    }
+
+
+    .title{
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+
+    .section-right p{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+
+    .price{
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .price h2{
+        font-size: 25px;
+    }
+    
+    button{
+        height: 40px;
+    }
+
+    button h1{
+        font-size: 15px;
+    }
+}
